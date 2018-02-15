@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Random;
+import java.util.Random; 
 
 public class MainActivity extends AppCompatActivity {
 
