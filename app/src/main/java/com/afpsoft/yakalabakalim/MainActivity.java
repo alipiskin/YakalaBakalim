@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView; 
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         if (isInGame==true) {
 
             for (ImageView image : imageArray) {
-                image.setImageResource(R.drawable.target);
+                image.setImageResource(R.drawable.boom);
 
             }
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                     for (ImageView image : imageArray) {
 
-                        image.setImageResource(R.drawable.kenny);
+                        image.setImageResource(R.drawable.cat);
                     }
 
                 }
@@ -133,12 +133,13 @@ public class MainActivity extends AppCompatActivity {
 
                 for (ImageView image : imageArray) {
                     image.setVisibility(View.INVISIBLE);
+                    image.setImageResource(R.drawable.cat);
                 }
 
                 Random r = new Random();
                 int i = r.nextInt(8-0);
 
-                imageArray[i].setImageResource(R.drawable.kenny);
+                imageArray[i].setImageResource(R.drawable.cat);
                 imageArray[i].setVisibility(View.VISIBLE);
 
                 handler.postDelayed(this, 500);
