@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Random r = new Random();
-                int i = r.nextInt(8-0);
+                int i = r.nextInt(8-0); 
 
                 imageArray[i].setImageResource(R.drawable.cat);
                 imageArray[i].setVisibility(View.VISIBLE);
